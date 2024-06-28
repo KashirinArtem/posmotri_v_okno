@@ -141,7 +141,7 @@ input {
   grid-template-columns: repeat(3, 1fr);
   margin-top: 5px;
   text-align: right;
-  gap: 10px;
+  gap: 20px;
 }
 
 .search-form__label {
@@ -149,11 +149,11 @@ input {
   cursor: pointer;
 }
 
-.search-form__pseudo-checkbox {
+.search-form__pseudo-checkbox::after {
+  content: '';
   display: inline-block;
   position: absolute;
-  top: 4px;
-  left: 5px;
+  transform: translate(-20px, 4px);
   width: 13px;
   height: 13px;
   outline: 1px solid #fff;
@@ -177,7 +177,6 @@ input {
 .search-form__submit-button {
   align-self: end;
 }
-
 
 .content__details {
   display: grid;
@@ -207,12 +206,6 @@ input {
   overflow-x: hidden;
   gap: 30px;
   height: 303px;
-}
-
-.content__list::-webkit-scrollbar {
-
-  display: none;
-
 }
 
 .content__list .content__list-item {
