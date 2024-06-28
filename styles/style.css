@@ -204,17 +204,13 @@ input {
 
 .content__list {
   position: relative;
-  overflow: scroll;
+  overflow-y: scroll;
   gap: 30px;
   height: 298px;
 }
 
 .content__list-item {
   padding: 2px;
-}
-
-.content__list::-webkit-scrollbar {
-  display: none;
 }
 
 .content__video-card-title {
