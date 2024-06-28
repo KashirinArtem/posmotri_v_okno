@@ -239,15 +239,6 @@ input {
   color: #fff;
 }
 
-.content__video-card-title,
-.content__video-card-description {
-  word-break: break-all;
-}
-
-.content__video-card-description {
-  word-break: break-all;
-}
-
 .content__video-card {
   grid-template-columns: repeat(2, 1fr);
 }
