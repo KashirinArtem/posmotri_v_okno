@@ -149,7 +149,7 @@ input {
 }
 
 .search-form__pseudo-checkbox::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   transform: translate(-20px, 4px);
@@ -159,7 +159,7 @@ input {
   outline-offset: 2px;
 }
 
-.search-form__checkbox:checked+.search-form__pseudo-checkbox {
+.search-form__checkbox:checked~.search-form__pseudo-checkbox:after {
   background-color: #fff;
 }
 
