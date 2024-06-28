@@ -154,7 +154,6 @@ input {
   position: absolute;
   top: 4px;
   left: 5px;
-
   width: 13px;
   height: 13px;
   outline: 1px solid #fff;
@@ -165,12 +164,20 @@ input {
   background-color: #fff;
 }
 
+.button {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: inherit;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
 .search-form__submit-button {
   align-self: end;
-  border: 1px solid #fff;
-  line-height: 1.65;
-  font-weight: 700;
 }
+
 
 .content__details {
   display: grid;
@@ -245,14 +252,6 @@ input {
 
 .more-button {
   width: 99%;
-  background: transparent;
-  color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  border: 1px solid #fff;
-  line-height: 30px;
-  margin: 2px;
 }
 
 .reloader {
