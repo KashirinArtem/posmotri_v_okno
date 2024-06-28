@@ -145,7 +145,6 @@ input {
 }
 
 .search-form__label {
-  position: relative;
   cursor: pointer;
 }
 
