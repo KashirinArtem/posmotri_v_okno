@@ -235,9 +235,12 @@ input {
   height: 103px;
 }
 
+.content__video-card-description-container {
+  color: #fff;
+}
+
 .content__video-card-title,
 .content__video-card-description {
-  color: #fff;
   word-break: break-all;
 }
 
