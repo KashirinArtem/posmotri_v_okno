@@ -82,7 +82,7 @@ input {
   margin: 134px auto;
   display: grid;
   grid-template-columns: 1fr 399px;
-  grid-template-rows: 534px;
+  grid-template-rows: 1fr;
   gap: 32px;
 }
 
