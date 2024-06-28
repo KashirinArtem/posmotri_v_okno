@@ -247,10 +247,6 @@ input {
   width: 99%;
 }
 
-.reloader {
-  position: absolute;
-}
-
 /* effects */
 
 .search-form__textfield:focus {
