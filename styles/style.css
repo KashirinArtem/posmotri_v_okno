@@ -161,7 +161,7 @@ input {
   outline-offset: 2px;
 }
 
-input[type="checkbox"]:checked+.search-form__pseudo-checkbox {
+.search-form__checkbox:checked+.search-form__pseudo-checkbox {
   background-color: #fff;
 }
 
