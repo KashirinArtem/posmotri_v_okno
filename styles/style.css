@@ -219,6 +219,10 @@ input {
   grid-template-columns: repeat(2, 50%);
 }
 
+.content__video-card-description-container {
+  color: #fff;
+}
+
 .content__video-card-title {
   font-family: Oswald, sans-serif;
   font-size: 30px;
@@ -241,10 +245,6 @@ input {
   max-height: 103px;
 }
 
-.content__video-card-description-container {
-  color: #fff;
-}
-
 .content__list-item-button {
   padding: 2px;
 }
@@ -254,8 +254,11 @@ input {
 }
 
 /* effects */
-
 .search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
@@ -264,21 +267,26 @@ input {
   border: 1px solid #fff;
 }
 
-.search-form__submit-button:active,
-.more-button:active {
+.button-effect:focus {
+  outline: none;
+}
+
+.button-effect:active {
   background: #545050;
 }
 
-.search-form__submit-button:hover,
-.more-button:hover {
+.button-effect:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.search-form__submit-button:focus,
-.more-button:focus {
+.button-effect:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
+}
+
+.content__card-link:focus {
+  outline: none;
 }
 
 .content__card-link:active {
@@ -289,12 +297,12 @@ input {
   text-decoration: #fff underline;
 }
 
-.content__card-link:focus {
+.content__card-link:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover {
   text-decoration: #fff underline;
 }
 
