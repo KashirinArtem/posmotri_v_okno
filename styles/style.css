@@ -9,7 +9,10 @@ html {
 }
 
 .page {
+  display: grid;
+  place-items: center;
   inline-size: 1200px;
+  block-size: 100%;
   margin: 0 auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -78,8 +81,8 @@ input {
 }
 
 .content {
-  max-width: 1144px;
-  margin: 130px auto;
+  max-width: 1140px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 399px;
   grid-template-rows: 1fr;
@@ -301,6 +304,6 @@ input {
   text-decoration: #fff underline;
 }
 
-.search-form__label:focus-within {
+.search-form__label:focus-visible {
   outline: 1px solid #fff;
 }
