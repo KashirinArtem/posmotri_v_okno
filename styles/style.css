@@ -218,6 +218,10 @@ input {
   width: 100%;
 }
 
+.content__card-link_current {
+  background: #545050;
+}
+
 .content__video-card {
   grid-template-columns: 200px 194px;
 }
