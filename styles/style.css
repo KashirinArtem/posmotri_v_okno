@@ -140,15 +140,17 @@ input {
 }
 
 .search-form__checkbox-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   margin-top: 5px;
-  text-align: right;
-  gap: 20px;
 }
 
-.search-form__label {
+.search-form__checkbox-list>.search-form__label {
+  display: inline-block;
+  margin-left: 23px;
   cursor: pointer;
+}
+
+.search-form__checkbox-list>.search-form__label:not(:last-child) {
+  margin-right: 12px;
 }
 
 .search-form__pseudo-checkbox::after {
