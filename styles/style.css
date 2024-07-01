@@ -314,7 +314,9 @@ input {
   outline-offset: 1px;
 }
 
-.search-form__label:has(:hover) {
+
+/* Надеюсь, что правильно. Любой из потомков .search-form__label, который получит hover */
+.search-form__checkbox-list>.search-form__label:has(:hover) {
   text-decoration: #fff underline;
 }
 
