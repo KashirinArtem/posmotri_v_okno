@@ -157,6 +157,7 @@ input {
   position: relative;
   justify-content: space-between;
   width: 100%;
+  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox::before {
@@ -313,7 +314,7 @@ input {
   outline-offset: 1px;
 }
 
-.search-form__label-text:hover {
+.search-form__label:has(:hover) {
   text-decoration: #fff underline;
 }
 
