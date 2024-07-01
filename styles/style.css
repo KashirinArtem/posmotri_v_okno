@@ -78,6 +78,7 @@ ol {
 
 input {
   appearance: none;
+  display: inline-block;
 }
 
 .content {
@@ -145,26 +146,34 @@ input {
 
 .search-form__checkbox-list>.search-form__label {
   display: inline-block;
-  margin-left: 23px;
+  position: relative;
+  margin-right: 10px;
+  padding-left: 25px;
   cursor: pointer;
 }
 
-.search-form__checkbox-list>.search-form__label:not(:last-child) {
-  margin-right: 12px;
+.search-form__checkbox-list>.search-form__label:last-child {
+  margin-right: 0;
 }
 
-.search-form__pseudo-checkbox::after {
+.search-form__label-text {
+  display: inline-block;
+  /* width: 100%; */
+  text-align: right;
+}
+
+.search-form__pseudo-checkbox::before {
   content: "";
   display: inline-block;
   position: absolute;
-  transform: translate(-20px, 4px);
   width: 13px;
   height: 13px;
+  transform: translate(-23px, 4px);
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
 
-.search-form__checkbox:checked~.search-form__pseudo-checkbox:after {
+.search-form__checkbox:checked+.search-form__pseudo-checkbox::before {
   background-color: #fff;
 }
 
@@ -306,10 +315,11 @@ input {
   outline-offset: 1px;
 }
 
-.search-form__label:hover {
+.search-form__label-text:hover {
   text-decoration: #fff underline;
 }
 
-.search-form__label:focus-visible {
+.search-form__label:has(.search-form__checkbox:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 3px;
 }
