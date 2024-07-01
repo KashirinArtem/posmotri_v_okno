@@ -112,6 +112,11 @@ input {
   margin-top: 16px;
 }
 
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
 .search-form__fieldset-title {
   padding-left: 2px;
 }
@@ -142,27 +147,16 @@ input {
 
 .search-form__checkbox-list {
   display: flex;
-  /* 
-  не позиционировал по горизотали justify-content применил 
-  margin-left/rignt к .search-form__label чтоб было по perfict-pixel
-  */
+  width: 100%;
   margin-top: 5px;
+  gap: 12px;
 }
 
-.search-form__checkbox-list>.search-form__label {
+.search-form__label {
+  display: flex;
   position: relative;
-  margin-left: 26px;
-  margin-right: 14px;
-  cursor: pointer;
-}
-
-.search-form__checkbox-list>.search-form__label:last-child {
-  margin-right: 0;
-}
-
-.search-form__label-text {
-  display: inline-block;
-  text-align: right;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .search-form__pseudo-checkbox::before {
@@ -171,7 +165,8 @@ input {
   position: absolute;
   width: 13px;
   height: 13px;
-  transform: translate(-23px, 4px);
+  top: 4px;
+  left: 4px;
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
